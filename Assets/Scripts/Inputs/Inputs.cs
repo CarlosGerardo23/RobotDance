@@ -28,130 +28,218 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             ""id"": ""185fe18e-67b0-4ac8-8dcd-7d567cad6a29"",
             ""actions"": [
                 {
-                    ""name"": ""HandFoward"",
-                    ""type"": ""Button"",
+                    ""name"": ""PlayerExtremity1"",
+                    ""type"": ""Value"",
                     ""id"": ""d4ea13b2-7267-4f43-a0ab-7df07da540f1"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""HandUP"",
-                    ""type"": ""Button"",
-                    ""id"": ""23e817bf-15df-4624-9fd7-30a8522a114b"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""PlayerExtremity2"",
+                    ""type"": ""Value"",
+                    ""id"": ""abc234b1-a599-48df-a4e4-bf1a378e736e"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
-                    ""interactions"": ""Hold"",
-                    ""initialStateCheck"": false
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""LegFoward"",
-                    ""type"": ""Button"",
-                    ""id"": ""f53c14e2-e029-4a98-a227-628fed144573"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""PlayerMap1"",
+                    ""type"": ""Value"",
+                    ""id"": ""c95a3e67-8604-458a-b781-c2a40ac12f76"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": ""Hold"",
-                    ""initialStateCheck"": false
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""LegUP"",
-                    ""type"": ""Button"",
-                    ""id"": ""d7f21030-7117-44ef-9dac-ee3564167d9b"",
-                    ""expectedControlType"": ""Button"",
+                    ""name"": ""PlayerMap2"",
+                    ""type"": ""Value"",
+                    ""id"": ""d9bb240c-9ac0-47e3-9cae-3fb29d310a16"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": ""Hold"",
-                    ""initialStateCheck"": false
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": """",
-                    ""id"": ""7e7f4fe8-788c-4236-8e59-fa20b9595082"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""6479875d-b82b-4f9c-89b6-0f7f436256e1"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""HandFoward"",
-                    ""isComposite"": false,
+                    ""action"": ""PlayerMap1"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""bab982ee-8664-4130-907d-032d8b8590be"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HandFoward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2628218c-5e25-44b0-a8a1-07e1954be0ad"",
+                    ""name"": ""up"",
+                    ""id"": ""b6993f0f-425a-4fa4-af1e-45ca662ce405"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""HandUP"",
+                    ""action"": ""PlayerMap1"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""4585f730-4815-424a-a1b9-bb9ef7dde6c3"",
-                    ""path"": ""<Keyboard>/upArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""HandUP"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8c575504-fd51-4632-b23d-5fe7f6e89f6c"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LegFoward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""e9a2d5ac-2fc1-491a-a02e-a9607ec218f6"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LegFoward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""2b56ee15-2d4e-48d5-8fa4-e9b9144f527b"",
+                    ""name"": ""down"",
+                    ""id"": ""54fa86a0-7e4d-4826-8b71-232013099287"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LegUP"",
+                    ""action"": ""PlayerMap1"",
                     ""isComposite"": false,
-                    ""isPartOfComposite"": false
+                    ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""68eec08e-cf8b-47e1-8e66-c453c7319de4"",
-                    ""path"": ""<Keyboard>/downArrow"",
+                    ""name"": ""left"",
+                    ""id"": ""dd5e31cf-bd6c-4d48-ac48-79557d13b211"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LegUP"",
+                    ""action"": ""PlayerMap1"",
                     ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""bd5270a7-f4a0-4351-96bc-061375d6e372"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""ea13dca7-2169-43d9-8575-0ef6e4d8b816"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap2"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4f1878fc-cee3-47d9-ab8f-d16a0c1a34b3"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""79938438-ccfa-440c-a6f9-2b49cf259335"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""bb9f49e2-3ca8-4b3d-b441-551324e81532"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""c9cebeb7-117f-455f-8daa-9f9b5976283a"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerMap2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""a58f1ea6-440f-416d-bc60-df1d6a8d91f0"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity1"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""67f1883c-2f16-402b-8b1e-0ca50215f6ad"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""57caf70f-54e9-4b0b-b956-2ed06b883cfc"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""59ccd1c7-6280-4e12-807f-989351003ef7"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity2"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""558203f0-c708-4eec-9c1c-fcb9d5c2d93e"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""cc8e6395-bd78-48a4-ba9c-3356ccdafd37"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayerExtremity2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -160,10 +248,10 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_HandFoward = m_Player.FindAction("HandFoward", throwIfNotFound: true);
-        m_Player_HandUP = m_Player.FindAction("HandUP", throwIfNotFound: true);
-        m_Player_LegFoward = m_Player.FindAction("LegFoward", throwIfNotFound: true);
-        m_Player_LegUP = m_Player.FindAction("LegUP", throwIfNotFound: true);
+        m_Player_PlayerExtremity1 = m_Player.FindAction("PlayerExtremity1", throwIfNotFound: true);
+        m_Player_PlayerExtremity2 = m_Player.FindAction("PlayerExtremity2", throwIfNotFound: true);
+        m_Player_PlayerMap1 = m_Player.FindAction("PlayerMap1", throwIfNotFound: true);
+        m_Player_PlayerMap2 = m_Player.FindAction("PlayerMap2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -225,18 +313,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_HandFoward;
-    private readonly InputAction m_Player_HandUP;
-    private readonly InputAction m_Player_LegFoward;
-    private readonly InputAction m_Player_LegUP;
+    private readonly InputAction m_Player_PlayerExtremity1;
+    private readonly InputAction m_Player_PlayerExtremity2;
+    private readonly InputAction m_Player_PlayerMap1;
+    private readonly InputAction m_Player_PlayerMap2;
     public struct PlayerActions
     {
         private @Inputs m_Wrapper;
         public PlayerActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @HandFoward => m_Wrapper.m_Player_HandFoward;
-        public InputAction @HandUP => m_Wrapper.m_Player_HandUP;
-        public InputAction @LegFoward => m_Wrapper.m_Player_LegFoward;
-        public InputAction @LegUP => m_Wrapper.m_Player_LegUP;
+        public InputAction @PlayerExtremity1 => m_Wrapper.m_Player_PlayerExtremity1;
+        public InputAction @PlayerExtremity2 => m_Wrapper.m_Player_PlayerExtremity2;
+        public InputAction @PlayerMap1 => m_Wrapper.m_Player_PlayerMap1;
+        public InputAction @PlayerMap2 => m_Wrapper.m_Player_PlayerMap2;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -246,34 +334,34 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
-            @HandFoward.started += instance.OnHandFoward;
-            @HandFoward.performed += instance.OnHandFoward;
-            @HandFoward.canceled += instance.OnHandFoward;
-            @HandUP.started += instance.OnHandUP;
-            @HandUP.performed += instance.OnHandUP;
-            @HandUP.canceled += instance.OnHandUP;
-            @LegFoward.started += instance.OnLegFoward;
-            @LegFoward.performed += instance.OnLegFoward;
-            @LegFoward.canceled += instance.OnLegFoward;
-            @LegUP.started += instance.OnLegUP;
-            @LegUP.performed += instance.OnLegUP;
-            @LegUP.canceled += instance.OnLegUP;
+            @PlayerExtremity1.started += instance.OnPlayerExtremity1;
+            @PlayerExtremity1.performed += instance.OnPlayerExtremity1;
+            @PlayerExtremity1.canceled += instance.OnPlayerExtremity1;
+            @PlayerExtremity2.started += instance.OnPlayerExtremity2;
+            @PlayerExtremity2.performed += instance.OnPlayerExtremity2;
+            @PlayerExtremity2.canceled += instance.OnPlayerExtremity2;
+            @PlayerMap1.started += instance.OnPlayerMap1;
+            @PlayerMap1.performed += instance.OnPlayerMap1;
+            @PlayerMap1.canceled += instance.OnPlayerMap1;
+            @PlayerMap2.started += instance.OnPlayerMap2;
+            @PlayerMap2.performed += instance.OnPlayerMap2;
+            @PlayerMap2.canceled += instance.OnPlayerMap2;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @HandFoward.started -= instance.OnHandFoward;
-            @HandFoward.performed -= instance.OnHandFoward;
-            @HandFoward.canceled -= instance.OnHandFoward;
-            @HandUP.started -= instance.OnHandUP;
-            @HandUP.performed -= instance.OnHandUP;
-            @HandUP.canceled -= instance.OnHandUP;
-            @LegFoward.started -= instance.OnLegFoward;
-            @LegFoward.performed -= instance.OnLegFoward;
-            @LegFoward.canceled -= instance.OnLegFoward;
-            @LegUP.started -= instance.OnLegUP;
-            @LegUP.performed -= instance.OnLegUP;
-            @LegUP.canceled -= instance.OnLegUP;
+            @PlayerExtremity1.started -= instance.OnPlayerExtremity1;
+            @PlayerExtremity1.performed -= instance.OnPlayerExtremity1;
+            @PlayerExtremity1.canceled -= instance.OnPlayerExtremity1;
+            @PlayerExtremity2.started -= instance.OnPlayerExtremity2;
+            @PlayerExtremity2.performed -= instance.OnPlayerExtremity2;
+            @PlayerExtremity2.canceled -= instance.OnPlayerExtremity2;
+            @PlayerMap1.started -= instance.OnPlayerMap1;
+            @PlayerMap1.performed -= instance.OnPlayerMap1;
+            @PlayerMap1.canceled -= instance.OnPlayerMap1;
+            @PlayerMap2.started -= instance.OnPlayerMap2;
+            @PlayerMap2.performed -= instance.OnPlayerMap2;
+            @PlayerMap2.canceled -= instance.OnPlayerMap2;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -293,9 +381,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     public PlayerActions @Player => new PlayerActions(this);
     public interface IPlayerActions
     {
-        void OnHandFoward(InputAction.CallbackContext context);
-        void OnHandUP(InputAction.CallbackContext context);
-        void OnLegFoward(InputAction.CallbackContext context);
-        void OnLegUP(InputAction.CallbackContext context);
+        void OnPlayerExtremity1(InputAction.CallbackContext context);
+        void OnPlayerExtremity2(InputAction.CallbackContext context);
+        void OnPlayerMap1(InputAction.CallbackContext context);
+        void OnPlayerMap2(InputAction.CallbackContext context);
     }
 }
