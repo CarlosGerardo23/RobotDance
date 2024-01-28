@@ -259,6 +259,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TomatoSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: lowerLimit.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: lowerLimit.y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: highertLimit.x
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: highertLimit.y
+      value: -5.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -330,8 +346,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.39785, y: 0.89635015, z: 0}
-    m_Extent: {x: 10.09525, y: 5.9172497, z: 0}
+    m_Center: {x: -1.4021001, y: 0.911, z: 0}
+    m_Extent: {x: 10.101601, y: 5.9181004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -998,6 +1014,83 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &849668359
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042598438584972821, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: m_Name
+      value: RoseSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: lowerLimit.x
+      value: -9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: lowerLimit.y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: objectPrefab
+      value: 
+      objectReference: {fileID: 380624368386985541, guid: 93ce2202068b2cd469b09ef32de30b31, type: 3}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: highertLimit.x
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594161703729721457, guid: e14841e605380174db3fdfb546dc0636, type: 3}
+      propertyPath: highertLimit.y
+      value: -5.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e14841e605380174db3fdfb546dc0636, type: 3}
 --- !u!1 &888698015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,63 +2073,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363236363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1505406238
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 502856361961332071, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2042598438584972821, guid: e14841e605380174db3fdfb546dc0636, type: 3}
-      propertyPath: m_Name
-      value: RoseSpawner
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e14841e605380174db3fdfb546dc0636, type: 3}
 --- !u!1 &1600906449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,4 +2500,4 @@ SceneRoots:
   - {fileID: 1363236363}
   - {fileID: 704934572}
   - {fileID: 135240713}
-  - {fileID: 1505406238}
+  - {fileID: 849668359}
