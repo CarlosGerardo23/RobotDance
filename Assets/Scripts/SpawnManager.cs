@@ -10,8 +10,8 @@ public class SpawnManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            SpawnObject();
+        // if (Input.GetKeyDown(KeyCode.Space))
+            // SpawnObject();
     }
 
     public void SpawnObject()
