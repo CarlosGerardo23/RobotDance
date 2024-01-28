@@ -6,7 +6,13 @@ using UnityEngine;
 
 public class PlayerPoseController : MonoBehaviour
 {
+    [Header("Spine Rotation")]
+    [SerializeField] private GameObject _rotationSpine;
     [SerializeField] private GameObject _spine;
+    [SerializeField] private float _speedRotation;
+    [SerializeField] private float _zMinRotation = -35;
+    [SerializeField] private float _zMaxRotation = 35;
+    [Header("Hands Variables")]
     [SerializeField] private GameObject _rightHandSolver;
     [SerializeField] private GameObject _leftHandSolver;
     [SerializeField] private float _xSpeed = 2f;
@@ -29,7 +35,8 @@ public class PlayerPoseController : MonoBehaviour
     private Vector3 _moveHandLeftDirection;
     private Vector2 _handsValue1;
     private Vector2 _handsValue2;
-
+    //Spine Rotation
+    private int _direction = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +49,8 @@ public class PlayerPoseController : MonoBehaviour
         {
             if (_returnToCenterLegs)
                 GetXDirLegsZero();
+            if (_moveSpineDirection.x != 0)
+                RotateSpine(_moveSpineDirection.x);
             if (_moveSpineDirection.magnitude != 0)
                 _spine.transform.localPosition = _moveSpineDirection;
             if (_moveHandRightDirection.y != 0)
@@ -50,6 +59,23 @@ public class PlayerPoseController : MonoBehaviour
                 _leftHandSolver.transform.localPosition = _moveHandLeftDirection;
 
         }
+    }
+
+    private void RotateSpine(float x)
+    {
+        if (x == 0)
+            return;
+        _direction = (x ) < 0 ? 1 : -1;
+
+        float rotacionActual = _direction * _speedRotation * Time.deltaTime;
+        float rotacionZ = Mathf.DeltaAngle(0f, _rotationSpine.transform.localEulerAngles.z);
+        rotacionZ = rotacionZ + rotacionActual;
+        Debug.Log($"{x}");
+        // Ajustar la rotación al rango permitido
+        //  Debug.Log($"{rotacionZ}, {_speedRotation}, {rotacionActual},{_rotationSpine.transform.localEulerAngles}{x}");
+        rotacionZ = Mathf.Clamp(rotacionZ, _zMinRotation, _zMaxRotation);
+        // Establecer la rotación ajustada al objeto
+        _rotationSpine.transform.localEulerAngles = new Vector3(_rotationSpine.transform.localEulerAngles.x, _rotationSpine.transform.localEulerAngles.y, rotacionZ);
     }
 
     public void SetDirection(PlayerType player, ExtremityType extremityType, Vector2 value)
