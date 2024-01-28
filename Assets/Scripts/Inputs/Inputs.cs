@@ -28,7 +28,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             ""id"": ""185fe18e-67b0-4ac8-8dcd-7d567cad6a29"",
             ""actions"": [
                 {
-                    ""name"": ""PlayerExtremity1"",
+                    ""name"": ""LegMovement1"",
                     ""type"": ""Value"",
                     ""id"": ""d4ea13b2-7267-4f43-a0ab-7df07da540f1"",
                     ""expectedControlType"": ""Axis"",
@@ -37,7 +37,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""PlayerExtremity2"",
+                    ""name"": ""LegMovement2"",
                     ""type"": ""Value"",
                     ""id"": ""abc234b1-a599-48df-a4e4-bf1a378e736e"",
                     ""expectedControlType"": ""Axis"",
@@ -46,135 +46,25 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""PlayerMap1"",
+                    ""name"": ""HandMovement1"",
                     ""type"": ""Value"",
-                    ""id"": ""c95a3e67-8604-458a-b781-c2a40ac12f76"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""id"": ""216c9a7a-dc0f-4240-91fc-bc112e114e74"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""PlayerMap2"",
+                    ""name"": ""HandMovement2"",
                     ""type"": ""Value"",
-                    ""id"": ""d9bb240c-9ac0-47e3-9cae-3fb29d310a16"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""id"": ""54c793e8-de42-42ed-83d8-fc6918f0b947"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""6479875d-b82b-4f9c-89b6-0f7f436256e1"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap1"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""b6993f0f-425a-4fa4-af1e-45ca662ce405"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""54fa86a0-7e4d-4826-8b71-232013099287"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""dd5e31cf-bd6c-4d48-ac48-79557d13b211"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""bd5270a7-f4a0-4351-96bc-061375d6e372"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap1"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""2D Vector"",
-                    ""id"": ""ea13dca7-2169-43d9-8575-0ef6e4d8b816"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap2"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""4f1878fc-cee3-47d9-ab8f-d16a0c1a34b3"",
-                    ""path"": ""<Keyboard>/i"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""79938438-ccfa-440c-a6f9-2b49cf259335"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""bb9f49e2-3ca8-4b3d-b441-551324e81532"",
-                    ""path"": ""<Keyboard>/j"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""c9cebeb7-117f-455f-8daa-9f9b5976283a"",
-                    ""path"": ""<Keyboard>/l"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PlayerMap2"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": ""1D Axis"",
                     ""id"": ""a58f1ea6-440f-416d-bc60-df1d6a8d91f0"",
@@ -182,29 +72,29 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity1"",
+                    ""action"": ""LegMovement1"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
                     ""id"": ""67f1883c-2f16-402b-8b1e-0ca50215f6ad"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity1"",
+                    ""action"": ""LegMovement1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
                     ""id"": ""57caf70f-54e9-4b0b-b956-2ed06b883cfc"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity1"",
+                    ""action"": ""LegMovement1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -215,29 +105,95 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity2"",
+                    ""action"": ""LegMovement2"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
                     ""id"": ""558203f0-c708-4eec-9c1c-fcb9d5c2d93e"",
-                    ""path"": ""<Keyboard>/u"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity2"",
+                    ""action"": ""LegMovement2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
                     ""id"": ""cc8e6395-bd78-48a4-ba9c-3356ccdafd37"",
-                    ""path"": ""<Keyboard>/o"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PlayerExtremity2"",
+                    ""action"": ""LegMovement2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""7a965d3d-4375-4ec6-9cd0-83402eeeea6e"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement1"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""9c3f6670-79d0-4d2c-8529-d35bce2dbb30"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""e33d25a9-b376-438a-983c-49d49cba7f23"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""03acb103-9d9c-45fc-a05e-0c0bb2be6020"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement2"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""891171d4-b148-4fb3-9c85-a1985762cfa4"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement2"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""9178f127-5f9d-4eae-a7a2-a6af6616da63"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""HandMovement2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -248,10 +204,10 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
 }");
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_PlayerExtremity1 = m_Player.FindAction("PlayerExtremity1", throwIfNotFound: true);
-        m_Player_PlayerExtremity2 = m_Player.FindAction("PlayerExtremity2", throwIfNotFound: true);
-        m_Player_PlayerMap1 = m_Player.FindAction("PlayerMap1", throwIfNotFound: true);
-        m_Player_PlayerMap2 = m_Player.FindAction("PlayerMap2", throwIfNotFound: true);
+        m_Player_LegMovement1 = m_Player.FindAction("LegMovement1", throwIfNotFound: true);
+        m_Player_LegMovement2 = m_Player.FindAction("LegMovement2", throwIfNotFound: true);
+        m_Player_HandMovement1 = m_Player.FindAction("HandMovement1", throwIfNotFound: true);
+        m_Player_HandMovement2 = m_Player.FindAction("HandMovement2", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -313,18 +269,18 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     // Player
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
-    private readonly InputAction m_Player_PlayerExtremity1;
-    private readonly InputAction m_Player_PlayerExtremity2;
-    private readonly InputAction m_Player_PlayerMap1;
-    private readonly InputAction m_Player_PlayerMap2;
+    private readonly InputAction m_Player_LegMovement1;
+    private readonly InputAction m_Player_LegMovement2;
+    private readonly InputAction m_Player_HandMovement1;
+    private readonly InputAction m_Player_HandMovement2;
     public struct PlayerActions
     {
         private @Inputs m_Wrapper;
         public PlayerActions(@Inputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @PlayerExtremity1 => m_Wrapper.m_Player_PlayerExtremity1;
-        public InputAction @PlayerExtremity2 => m_Wrapper.m_Player_PlayerExtremity2;
-        public InputAction @PlayerMap1 => m_Wrapper.m_Player_PlayerMap1;
-        public InputAction @PlayerMap2 => m_Wrapper.m_Player_PlayerMap2;
+        public InputAction @LegMovement1 => m_Wrapper.m_Player_LegMovement1;
+        public InputAction @LegMovement2 => m_Wrapper.m_Player_LegMovement2;
+        public InputAction @HandMovement1 => m_Wrapper.m_Player_HandMovement1;
+        public InputAction @HandMovement2 => m_Wrapper.m_Player_HandMovement2;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -334,34 +290,34 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PlayerActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PlayerActionsCallbackInterfaces.Add(instance);
-            @PlayerExtremity1.started += instance.OnPlayerExtremity1;
-            @PlayerExtremity1.performed += instance.OnPlayerExtremity1;
-            @PlayerExtremity1.canceled += instance.OnPlayerExtremity1;
-            @PlayerExtremity2.started += instance.OnPlayerExtremity2;
-            @PlayerExtremity2.performed += instance.OnPlayerExtremity2;
-            @PlayerExtremity2.canceled += instance.OnPlayerExtremity2;
-            @PlayerMap1.started += instance.OnPlayerMap1;
-            @PlayerMap1.performed += instance.OnPlayerMap1;
-            @PlayerMap1.canceled += instance.OnPlayerMap1;
-            @PlayerMap2.started += instance.OnPlayerMap2;
-            @PlayerMap2.performed += instance.OnPlayerMap2;
-            @PlayerMap2.canceled += instance.OnPlayerMap2;
+            @LegMovement1.started += instance.OnLegMovement1;
+            @LegMovement1.performed += instance.OnLegMovement1;
+            @LegMovement1.canceled += instance.OnLegMovement1;
+            @LegMovement2.started += instance.OnLegMovement2;
+            @LegMovement2.performed += instance.OnLegMovement2;
+            @LegMovement2.canceled += instance.OnLegMovement2;
+            @HandMovement1.started += instance.OnHandMovement1;
+            @HandMovement1.performed += instance.OnHandMovement1;
+            @HandMovement1.canceled += instance.OnHandMovement1;
+            @HandMovement2.started += instance.OnHandMovement2;
+            @HandMovement2.performed += instance.OnHandMovement2;
+            @HandMovement2.canceled += instance.OnHandMovement2;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
         {
-            @PlayerExtremity1.started -= instance.OnPlayerExtremity1;
-            @PlayerExtremity1.performed -= instance.OnPlayerExtremity1;
-            @PlayerExtremity1.canceled -= instance.OnPlayerExtremity1;
-            @PlayerExtremity2.started -= instance.OnPlayerExtremity2;
-            @PlayerExtremity2.performed -= instance.OnPlayerExtremity2;
-            @PlayerExtremity2.canceled -= instance.OnPlayerExtremity2;
-            @PlayerMap1.started -= instance.OnPlayerMap1;
-            @PlayerMap1.performed -= instance.OnPlayerMap1;
-            @PlayerMap1.canceled -= instance.OnPlayerMap1;
-            @PlayerMap2.started -= instance.OnPlayerMap2;
-            @PlayerMap2.performed -= instance.OnPlayerMap2;
-            @PlayerMap2.canceled -= instance.OnPlayerMap2;
+            @LegMovement1.started -= instance.OnLegMovement1;
+            @LegMovement1.performed -= instance.OnLegMovement1;
+            @LegMovement1.canceled -= instance.OnLegMovement1;
+            @LegMovement2.started -= instance.OnLegMovement2;
+            @LegMovement2.performed -= instance.OnLegMovement2;
+            @LegMovement2.canceled -= instance.OnLegMovement2;
+            @HandMovement1.started -= instance.OnHandMovement1;
+            @HandMovement1.performed -= instance.OnHandMovement1;
+            @HandMovement1.canceled -= instance.OnHandMovement1;
+            @HandMovement2.started -= instance.OnHandMovement2;
+            @HandMovement2.performed -= instance.OnHandMovement2;
+            @HandMovement2.canceled -= instance.OnHandMovement2;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -381,9 +337,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     public PlayerActions @Player => new PlayerActions(this);
     public interface IPlayerActions
     {
-        void OnPlayerExtremity1(InputAction.CallbackContext context);
-        void OnPlayerExtremity2(InputAction.CallbackContext context);
-        void OnPlayerMap1(InputAction.CallbackContext context);
-        void OnPlayerMap2(InputAction.CallbackContext context);
+        void OnLegMovement1(InputAction.CallbackContext context);
+        void OnLegMovement2(InputAction.CallbackContext context);
+        void OnHandMovement1(InputAction.CallbackContext context);
+        void OnHandMovement2(InputAction.CallbackContext context);
     }
 }

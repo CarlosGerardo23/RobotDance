@@ -5,11 +5,9 @@ using UnityEngine.InputSystem;
 public class PlayerInput : ScriptableObject, Inputs.IPlayerActions
 {
     #region Delegates
-    //Hands
-    public event Action<PlayerType, ExtremityType> onSelectExtremityStartedEvent;
+    public event Action<PlayerType, ExtremityType, float> onMoveExtremityStartEvent;
+    public event Action<PlayerType, ExtremityType> onMoveExtremityEndedEvent;
     public event Action<PlayerType, ExtremityType> onSelectExtremityEndedEvent;
-
-    public event Action<PlayerType, Vector2> onMoveExtremity;
     #endregion
     private Inputs _gameInput;
     private void OnEnable()
@@ -21,32 +19,36 @@ public class PlayerInput : ScriptableObject, Inputs.IPlayerActions
         }
     }
     #region Hands/Legs Interaction
-    public void OnPlayerExtremity1(InputAction.CallbackContext context)
+    public void OnLegMovement1(InputAction.CallbackContext context)
     {
-        ExtremityType extremityType = context.ReadValue<float>() < 0 ? ExtremityType.HAND : ExtremityType.LEG;
         if (context.phase == InputActionPhase.Performed)
-            onSelectExtremityStartedEvent?.Invoke(PlayerType.PLAYER1, extremityType);
-        if (context.phase == InputActionPhase.Canceled || context.phase == InputActionPhase.Disabled)
-            onSelectExtremityEndedEvent?.Invoke(PlayerType.PLAYER1, extremityType);
+            onMoveExtremityStartEvent?.Invoke(PlayerType.PLAYER1, ExtremityType.LEG, context.ReadValue<float>());
+        if (context.phase == InputActionPhase.Disabled || context.phase == InputActionPhase.Canceled)
+            onMoveExtremityEndedEvent?.Invoke(PlayerType.PLAYER1, ExtremityType.LEG);
     }
 
-    public void OnPlayerExtremity2(InputAction.CallbackContext context)
+    public void OnLegMovement2(InputAction.CallbackContext context)
     {
-        ExtremityType extremityType = context.ReadValue<float>() < 0 ? ExtremityType.HAND : ExtremityType.LEG;
         if (context.phase == InputActionPhase.Performed)
-            onSelectExtremityStartedEvent?.Invoke(PlayerType.PLAYER2, extremityType);
+            onMoveExtremityStartEvent?.Invoke(PlayerType.PLAYER2, ExtremityType.LEG, context.ReadValue<float>());
+        if (context.phase == InputActionPhase.Disabled || context.phase == InputActionPhase.Canceled)
+            onMoveExtremityEndedEvent?.Invoke(PlayerType.PLAYER2, ExtremityType.LEG);
     }
 
-    public void OnPlayerMap1(InputAction.CallbackContext context)
+    public void OnHandMovement1(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Performed)
-            onMoveExtremity?.Invoke(PlayerType.PLAYER1, context.ReadValue<Vector2>());
+            onMoveExtremityStartEvent?.Invoke(PlayerType.PLAYER1, ExtremityType.HAND, context.ReadValue<float>());
+        if (context.phase == InputActionPhase.Disabled || context.phase == InputActionPhase.Canceled)
+            onMoveExtremityEndedEvent?.Invoke(PlayerType.PLAYER1, ExtremityType.HAND);
     }
 
-    public void OnPlayerMap2(InputAction.CallbackContext context)
+    public void OnHandMovement2(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Performed)
-            onMoveExtremity?.Invoke(PlayerType.PLAYER2, context.ReadValue<Vector2>());
+            onMoveExtremityStartEvent?.Invoke(PlayerType.PLAYER2, ExtremityType.HAND, context.ReadValue<float>());
+        if (context.phase == InputActionPhase.Disabled || context.phase == InputActionPhase.Canceled)
+            onMoveExtremityEndedEvent?.Invoke(PlayerType.PLAYER2, ExtremityType.HAND);
     }
     #endregion
     #region Enable/Disable Player Inputs
@@ -58,7 +60,9 @@ public class PlayerInput : ScriptableObject, Inputs.IPlayerActions
     {
         _gameInput.Player.Disable();
     }
+
+
+    #endregion
 }
-#endregion
 public enum PlayerType { PLAYER1, PLAYER2 }
 public enum ExtremityType { HAND, LEG }
