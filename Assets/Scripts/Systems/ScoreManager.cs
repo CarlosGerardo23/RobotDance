@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     //Score
-    float score = 0;
-    float rango = 0;
+    [SerializeField]float score = 0;
+    float range = 1.0f;
 
     //Audience Bar
     float maxAudienceAmount;
@@ -20,27 +20,27 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] Image AudienceBar;
 
-    void calculatescore(float[] distancia)
+    public void calculatescore(float[] distances)
     {
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < distances.Length; i++)
         {
             //Primer if es perfecto, segundo if rango mas un poco hacia arriba y tercer if un poco hacia abajo
-            if (distancia[i] == 0)
+            if (distances[i] == 0)
             {
                 score += 100;
             }
-            else if (distancia[i] < rango)
+            else if (distances[i] < range)
             {
                 score += 50;
             }
-            else if (distancia[i] > rango)
+            else if (distances[i] > range)
             {
 
                 score += 0;
             }
         }
 
-        SetAudienceBar(score);
+        //SetAudienceBar(score);
     }
 
     void SetAudienceBar(float audienceAmount)
