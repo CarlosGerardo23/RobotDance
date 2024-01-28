@@ -1,12 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
+    //Score
     float score = 0;
     float rango = 0;
 
+    //Audience Bar
+    float maxAudienceAmount;
+    float pastAudienceAmount;
+
+    public static Action happyAudience;
+    public static Action angryAudience;
+    public static Action tomatoLaunch;
+
+    [SerializeField] Image AudienceBar;
 
     void calculatescore(float[] distancia)
     {
@@ -26,8 +38,18 @@ public class ScoreManager : MonoBehaviour
 
                 score += 0;
             }
-
-
         }
+
+        SetAudienceBar(score);
+    }
+
+    void SetAudienceBar(float audienceAmount)
+    {
+        pastAudienceAmount += audienceAmount;
+
+        float fillAmount = audienceAmount / maxAudienceAmount;
+        AudienceBar.fillAmount = fillAmount;
+
+        pastAudienceAmount = audienceAmount;
     }
 }
