@@ -10,4 +10,11 @@ public class ScenesManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex + 1);
     }
+
+    public void Salir()
+    {
+        Debug.Log("Salir...");
+        Application.Quit();
+    }
+
 }
