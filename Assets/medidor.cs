@@ -12,7 +12,7 @@ public class medidor : MonoBehaviour
     public Transform punterovelocidad;
     public float speed;
     private bool isgood;
-    private bool isbad
+    private bool isbad;
     private void Awake()
     {
         punterovelocidad = transform.Find("puntero");
