@@ -39,6 +39,9 @@ public class PlayerPoseController : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log($"My player is {_playerType}, movinf hand? {_isMovingHand}, moving leg {_isMovingLeg}, direction {_movingDirection}");
+        if(_currentExtremity!=null)
+        Debug.Log($"Current extremity {_currentExtremity.name}");
         if (_movingDirection != 0 && (_isMovingHand || _isMovingLeg))
         {
             Vector3 rotation = (new Vector3(0, 0, 1)) * _movingDirection * _rotationSpeed * Time.deltaTime;
