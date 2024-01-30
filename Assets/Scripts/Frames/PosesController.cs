@@ -46,6 +46,6 @@ public class PosesController : MonoBehaviour
             Destroy(_currentPose);
         }
         _currentPose = Instantiate(_poseList[Random.Range(0, _poseList.Count)], _poseTransfrom.position, Quaternion.identity);
-        currentBone = _currentPose.GetComponent<BonesInformation>();
+       // currentBone = _currentPose.GetComponent<BonesInformation>();
     }
 }
