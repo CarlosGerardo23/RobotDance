@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CrowdManager : MonoBehaviour
 {
+    [SerializeField] private PosesCheckerSO _posesChecker;
     public int morale = 2;
     public SpawnManager _tomatoSpawner;
     public SpawnManager _roseSpawner;
